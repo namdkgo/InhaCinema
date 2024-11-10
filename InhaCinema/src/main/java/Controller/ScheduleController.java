@@ -33,7 +33,10 @@ public class ScheduleController extends HttpServlet {
 		ScheduleDAO scheduleDAO = new ScheduleDAO();
 		String type = request.getParameter("type");
 		String message;
-		int scheduleIndex = Integer.parseInt(request.getParameter("scheduleIndex"));
+		String scheduleIndexParam = request.getParameter("scheduleIndex");
+		int scheduleIndex = -1;
+		if(scheduleIndexParam != null && !scheduleIndexParam.equals("null"))  
+			scheduleIndex = Integer.parseInt(request.getParameter("scheduleIndex"));
 		String movieIndex = request.getParameter("movieIndex");
 		String cinemaIndex = request.getParameter("cinemaIndex");
 		String screenDate = request.getParameter("screenDate");

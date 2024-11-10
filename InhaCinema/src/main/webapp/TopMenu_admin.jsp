@@ -19,6 +19,7 @@
       <div class="navbar-nav">
         <a class="nav-link" href="RegisterMovie.jsp">영화 등록</a>
         <a class="nav-link" href="ScheduleList_admin.jsp">시간표 목록</a>
+        <a class="nav-link" href="RegisterSchedule.jsp">시간표 등록</a>
       </div>
     </div>
   </div>

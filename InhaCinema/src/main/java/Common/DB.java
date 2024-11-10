@@ -16,7 +16,7 @@ public class DB { //Database Connector
 	public static final String SQL_SELECT_SCHEDULE_ALL = "SELECT * FROM SCHEDULES";
 	public static final String SQL_SELECT_SCHEDULE_BY_CINEMAINDEX = "SELECT * FROM SCHEDULES WHERE cinemaIndex = ?";
 	public static final String SQL_SELECT_SCHEDULE_BY_SCHEDULEINDEX = "SELECT * FROM SCHEDULES WHERE scheduleIndex = ?";
-	public static final String SQL_REGISTER_SCHEDULE = "INSERT INTO SCHEDULES (cinemaIndex, movieIndex, screenDate, startTime, seatState) VALUES(?, ?, ?, ?, ?)";
+	public static final String SQL_REGISTER_SCHEDULE = "INSERT INTO SCHEDULES (movieIndex, cinemaIndex, screenDate, startTime, seatState) VALUES(?, ?, ?, ?, ?)";
 	public static final String SQL_UPDATE_SCHEDULE = "UPDATE SCHEDULES SET movieIndex = ?, cinemaIndex = ?, screenDate = ?, startTime = ? WHERE scheduleIndex = ?";
 	public static final String SQL_DELETE_SCHEDULE = "DELETE FROM SCHEDULES WHERE scheduleIndex = ?";
 }
